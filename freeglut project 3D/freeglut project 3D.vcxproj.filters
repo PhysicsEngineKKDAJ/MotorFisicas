@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Math">
+      <UniqueIdentifier>{4d526978-59dd-4979-9ae4-bcfd1557159b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Math">
+      <UniqueIdentifier>{21fd85e9-aaa7-44d8-b3ba-a3f61121a37c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D">
+      <UniqueIdentifier>{e9ace022-f5c6-4d10-88f5-fbe19836e7bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D">
+      <UniqueIdentifier>{736cd379-f61b-4fce-968e-38f4f7cfb124}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjCuadricos">
+      <UniqueIdentifier>{8e7a5826-09e1-42d1-994a-1ef652637e55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjCompuestos">
+      <UniqueIdentifier>{d5ffdea6-5b22-4e3b-ac32-c6855bd6ad1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IG 1">
+      <UniqueIdentifier>{0f72d5e3-20f4-4152-a459-6d6733752fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\IG 1\Objetos">
+      <UniqueIdentifier>{34c99ea8-4ac5-44b3-b97c-186a80c2cb45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoCompuesto">
+      <UniqueIdentifier>{def4f26f-91d7-412d-820e-e3a8ab340a1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoMalla">
+      <UniqueIdentifier>{292bebec-3854-48ec-a62c-350ae6fdf049}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoCuadrico">
+      <UniqueIdentifier>{c11e3cfd-dd59-403a-9bba-e4a9ffb5c0d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IG1">
+      <UniqueIdentifier>{8dd7cbb0-5e1f-47c7-b4a2-63ea2df8fb09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\IG1\Objetos">
+      <UniqueIdentifier>{30ef881b-ceff-44eb-93e0-805c0c246ef6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjetoMalla">
+      <UniqueIdentifier>{5fdec5fc-66c4-4a87-ab97-bc251e8ee722}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjCompuestos\Árboles">
+      <UniqueIdentifier>{2efc604b-c36f-49ca-afbd-8a974e882e0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoCompuesto\Árboles">
+      <UniqueIdentifier>{2b295ffa-755a-46e1-9174-75f7aa753802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjCompuestos\Coche">
+      <UniqueIdentifier>{4d897711-98ba-49bf-b24c-f18c952ae3aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoCompuesto\Coche">
+      <UniqueIdentifier>{e0e64660-2c94-48b4-b382-89205b3c9f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Objeto3D\ObjCompuestos\Árboles\Copas">
+      <UniqueIdentifier>{483c8ea0-6359-4251-93de-f4540afd9bae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Objeto3D\ObjetoCompuesto\Árboles\Copas">
+      <UniqueIdentifier>{b1d10a76-ccc9-4588-804d-938b4f9ab2ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\QuadTree">
+      <UniqueIdentifier>{335d6452-c9bd-47ef-8256-b8fc5801ce33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Quadtree">
+      <UniqueIdentifier>{08791a1d-043d-4080-b53e-9734801a3e08}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PuntoVector3D.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticeNormal.cpp">
+      <Filter>Source Files\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Cono.cpp">
+      <Filter>Source Files\IG1\Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="FalsoTetraedro.cpp">
+      <Filter>Source Files\IG1\Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="Hipotrocoide.cpp">
+      <Filter>Source Files\IG1\Objetos</Filter>
+    </ClCompile>
+    <ClCompile Include="Camara.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TAfin.cpp">
+      <Filter>Source Files\Objeto3D</Filter>
+    </ClCompile>
+    <ClCompile Include="Malla.cpp">
+      <Filter>Source Files\Objeto3D\ObjetoMalla</Filter>
+    </ClCompile>
+    <ClCompile Include="Cara.cpp">
+      <Filter>Source Files\Objeto3D\ObjetoMalla</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjetoCuadrico.cpp">
+      <Filter>Source Files\Objeto3D\ObjCuadricos</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjetoCompuesto.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos</Filter>
+    </ClCompile>
+    <ClCompile Include="Escena.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos</Filter>
+    </ClCompile>
+    <ClCompile Include="Esfera.cpp">
+      <Filter>Source Files\Objeto3D\ObjCuadricos</Filter>
+    </ClCompile>
+    <ClCompile Include="Cilindro.cpp">
+      <Filter>Source Files\Objeto3D\ObjCuadricos</Filter>
+    </ClCompile>
+    <ClCompile Include="Disco.cpp">
+      <Filter>Source Files\Objeto3D\ObjCuadricos</Filter>
+    </ClCompile>
+    <ClCompile Include="DiscoParcial.cpp">
+      <Filter>Source Files\Objeto3D\ObjCuadricos</Filter>
+    </ClCompile>
+    <ClCompile Include="ArbolEsfera1.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles</Filter>
+    </ClCompile>
+    <ClCompile Include="ArbolCono1.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles</Filter>
+    </ClCompile>
+    <ClCompile Include="ArbolEsfera2.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles</Filter>
+    </ClCompile>
+    <ClCompile Include="ArbolCono2.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles</Filter>
+    </ClCompile>
+    <ClCompile Include="CopaDobleCono.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles\Copas</Filter>
+    </ClCompile>
+    <ClCompile Include="CopaDobleEsfera.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles\Copas</Filter>
+    </ClCompile>
+    <ClCompile Include="Coche.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Coche</Filter>
+    </ClCompile>
+    <ClCompile Include="Rueda.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Coche</Filter>
+    </ClCompile>
+    <ClCompile Include="CopaCono.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles\Copas</Filter>
+    </ClCompile>
+    <ClCompile Include="CopaEsfera.cpp">
+      <Filter>Source Files\Objeto3D\ObjCompuestos\Árboles\Copas</Filter>
+    </ClCompile>
+    <ClCompile Include="CuboRevolucion.cpp">
+      <Filter>Source Files\Objeto3D\ObjetoMalla</Filter>
+    </ClCompile>
+    <ClCompile Include="Cubo.cpp">
+      <Filter>Source Files\Objeto3D\ObjetoMalla</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadTree.cpp">
+      <Filter>Source Files\Quadtree</Filter>
+    </ClCompile>
+    <ClCompile Include="QuadtreeNode.cpp">
+      <Filter>Source Files\Quadtree</Filter>
+    </ClCompile>
+    <ClCompile Include="Mundo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PuntoVector3D.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticeNormal.h">
+      <Filter>Header Files\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Cono.h">
+      <Filter>Header Files\IG 1\Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="FalsoTetraedro.h">
+      <Filter>Header Files\IG 1\Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="Hipotrocoide.h">
+      <Filter>Header Files\IG 1\Objetos</Filter>
+    </ClInclude>
+    <ClInclude Include="Camara.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TAfin.h">
+      <Filter>Header Files\Objeto3D</Filter>
+    </ClInclude>
+    <ClInclude Include="Objeto3D.h">
+      <Filter>Header Files\Objeto3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjetoCuadrico.h">
+      <Filter>Header Files\Objeto3D\ObjetoCuadrico</Filter>
+    </ClInclude>
+    <ClInclude Include="Esfera.h">
+      <Filter>Header Files\Objeto3D\ObjetoCuadrico</Filter>
+    </ClInclude>
+    <ClInclude Include="Escena.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto</Filter>
+    </ClInclude>
+    <ClInclude Include="Cara.h">
+      <Filter>Header Files\Objeto3D\ObjetoMalla</Filter>
+    </ClInclude>
+    <ClInclude Include="Malla.h">
+      <Filter>Header Files\Objeto3D\ObjetoMalla</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjetoCompuesto.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto</Filter>
+    </ClInclude>
+    <ClInclude Include="Cilindro.h">
+      <Filter>Header Files\Objeto3D\ObjetoCuadrico</Filter>
+    </ClInclude>
+    <ClInclude Include="Disco.h">
+      <Filter>Header Files\Objeto3D\ObjetoCuadrico</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolEsfera1.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolCono1.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolEsfera2.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles</Filter>
+    </ClInclude>
+    <ClInclude Include="ArbolCono2.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles</Filter>
+    </ClInclude>
+    <ClInclude Include="DiscoParcial.h">
+      <Filter>Header Files\Objeto3D\ObjetoCuadrico</Filter>
+    </ClInclude>
+    <ClInclude Include="CopaDobleCono.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles\Copas</Filter>
+    </ClInclude>
+    <ClInclude Include="CopaDobleEsfera.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles\Copas</Filter>
+    </ClInclude>
+    <ClInclude Include="Coche.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Coche</Filter>
+    </ClInclude>
+    <ClInclude Include="Rueda.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Coche</Filter>
+    </ClInclude>
+    <ClInclude Include="CopaCono.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles\Copas</Filter>
+    </ClInclude>
+    <ClInclude Include="CopaEsfera.h">
+      <Filter>Header Files\Objeto3D\ObjetoCompuesto\Árboles\Copas</Filter>
+    </ClInclude>
+    <ClInclude Include="CuboRevolucion.h">
+      <Filter>Header Files\Objeto3D\ObjetoMalla</Filter>
+    </ClInclude>
+    <ClInclude Include="Cubo.h">
+      <Filter>Header Files\Objeto3D\ObjetoMalla</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadTree.h">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClInclude>
+    <ClInclude Include="QuadtreeNode.h">
+      <Filter>Header Files\QuadTree</Filter>
+    </ClInclude>
+    <ClInclude Include="Mundo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

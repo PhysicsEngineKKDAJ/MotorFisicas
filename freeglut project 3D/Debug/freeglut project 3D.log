@@ -1,0 +1,43 @@
+﻿Build started 17/11/2017 9:10:43.
+     1>Project "C:\hlocal\Práctica 1 IG - Mejoras\freeglut project 3D\freeglut project 3D.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\software\programacion\MSVStudio2013\VC\bin\CL.exe /c /I"C:\hlocal\Práctica 1 IG - Mejoras\freeglut\include\\" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Cubo.cpp
+         Cubo.cpp
+       Link:
+         C:\software\programacion\MSVStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\hlocal\Práctica 1 IG - Mejoras\freeglut\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.lib" /MACHINE:X86 Debug\ArbolCono1.obj
+         Debug\ArbolCono2.obj
+         Debug\ArbolEsfera1.obj
+         Debug\ArbolEsfera2.obj
+         Debug\Camara.obj
+         Debug\Cara.obj
+         Debug\Cilindro.obj
+         Debug\Coche.obj
+         Debug\Cono.obj
+         Debug\CopaCono.obj
+         Debug\CopaDobleCono.obj
+         Debug\CopaDobleEsfera.obj
+         Debug\CopaEsfera.obj
+         Debug\Cubo.obj
+         Debug\CuboRevolucion.obj
+         Debug\Disco.obj
+         Debug\DiscoParcial.obj
+         Debug\Escena.obj
+         Debug\Esfera.obj
+         Debug\FalsoTetraedro.obj
+         Debug\Hipotrocoide.obj
+         Debug\main.obj
+         Debug\Malla.obj
+         Debug\ObjetoCompuesto.obj
+         Debug\ObjetoCuadrico.obj
+         Debug\PuntoVector3D.obj
+         Debug\QuadTree.obj
+         Debug\QuadtreeNode.obj
+         Debug\Rueda.obj
+         Debug\TAfin.obj
+         Debug\VerticeNormal.obj
+         freeglut project 3D.vcxproj -> C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.exe
+     1>Done Building Project "C:\hlocal\Práctica 1 IG - Mejoras\freeglut project 3D\freeglut project 3D.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.73
