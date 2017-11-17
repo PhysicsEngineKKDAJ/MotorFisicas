@@ -121,6 +121,7 @@
     <ClInclude Include="Esfera.h" />
     <ClInclude Include="FalsoTetraedro.h" />
     <ClInclude Include="Hipotrocoide.h" />
+    <ClInclude Include="Lista.h" />
     <ClInclude Include="Malla.h" />
     <ClInclude Include="Mundo.h" />
     <ClInclude Include="Objeto3D.h" />

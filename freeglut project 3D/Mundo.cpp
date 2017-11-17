@@ -2,7 +2,7 @@
 
 
 Mundo::Mundo(GLfloat x, GLfloat y, GLfloat z, PuntoVector3D gravedad)
-	: tam(x, y, z, 0), gravityVector(gravedad)
+	: xLength(x), yLength (y), zLength(z), gravityVector(gravedad)
 {
 }
 
