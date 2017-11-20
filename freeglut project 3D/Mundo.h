@@ -1,3 +1,6 @@
+#ifndef _H_Mundo_H_
+#define _H_Mundo_H_
+
 #include "ObjetoCompuesto.h"
 #include <list>
 
@@ -19,19 +22,25 @@ public:
 	//Planos que delimitan el mundo
 	//CAMBIAR OBJETO3D POR WALL
 	inline void addWall(Objeto3D* w){ walls.push_back(w); };
-	inline void removeWall(Objeto3D* w){ walls; };//COMPLETAR: REMOVER PASANDO EL MURO	inline void removeWall(unsigned int pos){ walls; };//COMPLETAR: REMOVER PASANDO UN INDICE	inline unsigned int getNumWalls(){ return walls.size(); };	//----------------------MUROS-------------------------
+	inline void removeWall(Objeto3D* w){ walls; };//COMPLETAR: REMOVER PASANDO EL MURO
+	inline void removeWall(unsigned int pos){ walls; };//COMPLETAR: REMOVER PASANDO UN INDICE
+	inline unsigned int getNumWalls(){ return walls.size(); };
+	//----------------------MUROS-------------------------
 
 	//---------------------PARTICLE SYSTEM-------------------------
 	//CAMBIAR OBJETO3D POR PARTICLE SYSTEM
 	inline void addParticleSystem(Objeto3D* p){ particleSystems.push_back(p); };
-	inline void removeParticleSystem(Objeto3D* p){ particleSystems; };//COMPLETAR: REMOVER PASANDO EL MURO	inline void removeParticleSystem(unsigned int pos){ particleSystems; };//COMPLETAR: REMOVER PASANDO UN INDICE	inline unsigned int getNumParticleSystems(){ return particleSystems.size(); };
+	inline void removeParticleSystem(Objeto3D* p){ particleSystems; };//COMPLETAR: REMOVER PASANDO EL MURO
+	inline void removeParticleSystem(unsigned int pos){ particleSystems; };//COMPLETAR: REMOVER PASANDO UN INDICE
+	inline unsigned int getNumParticleSystems(){ return particleSystems.size(); };
 	//---------------------PARTICLE SYSTEM-------------------------
 
 	//---------------------CUERPOS RÍGIDOS----------------
 	//CAMBIAR OBJETO3D POR RIGIDBODY
 	inline void addRigidBody(Objeto3D* b){ rigidBodies.push_back(b); };
 	inline unsigned int getNumRigidBodies(){ return rigidBodies.size(); };
-	inline void removeRigidBody(unsigned int pos){ rigidBodies; };//COMPLETAR: REMOVER PASANDO UN INDICE	inline void removeRigidBody(Objeto3D* b){ rigidBodies.remove(b); };//COMPLETAR: REMOVER PASANDO EL MURO
+	inline void removeRigidBody(unsigned int pos){ rigidBodies; };//COMPLETAR: REMOVER PASANDO UN INDICE
+	inline void removeRigidBody(Objeto3D* b){ rigidBodies.remove(b); };//COMPLETAR: REMOVER PASANDO EL MURO
 	//---------------------CUERPOS RÍGIDOS----------------
 
 	//---------------------WORLD SPRINGS------------------------
@@ -59,3 +68,4 @@ private:
 
 };
 
+#endif

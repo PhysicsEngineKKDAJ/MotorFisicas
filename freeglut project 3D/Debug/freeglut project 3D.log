@@ -1,43 +1,84 @@
-﻿Build started 17/11/2017 9:10:43.
-     1>Project "C:\hlocal\Práctica 1 IG - Mejoras\freeglut project 3D\freeglut project 3D.vcxproj" on node 2 (Build target(s)).
+﻿Compilación iniciada a las 20/11/2017 18:02:36.
+     1>Proyecto "C:\hlocal\MotorFisicas\freeglut project 3D\freeglut project 3D.vcxproj" en el nodo 2 (Rebuild destinos).
      1>ClCompile:
-         C:\software\programacion\MSVStudio2013\VC\bin\CL.exe /c /I"C:\hlocal\Práctica 1 IG - Mejoras\freeglut\include\\" /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Cubo.cpp
+         C:\software\programacion\MSVStudio2013\VC\bin\CL.exe /c /IC:\hlocal\MotorFisicas\freeglut\include\ /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt ArbolCono1.cpp ArbolCono2.cpp ArbolEsfera1.cpp ArbolEsfera2.cpp Camara.cpp Cara.cpp Cilindro.cpp Coche.cpp Config.cpp Cono.cpp CopaCono.cpp CopaDobleCono.cpp CopaDobleEsfera.cpp CopaEsfera.cpp Cubo.cpp CuboRevolucion.cpp Disco.cpp DiscoParcial.cpp Escena.cpp Esfera.cpp FalsoTetraedro.cpp Hipotrocoide.cpp main.cpp Malla.cpp Mundo.cpp ObjetoCompuesto.cpp ObjetoCuadrico.cpp PuntoVector3D.cpp QuadTree.cpp QuadtreeNode.cpp RigidBody.cpp Rueda.cpp TAfin.cpp VerticeNormal.cpp
+         VerticeNormal.cpp
+         TAfin.cpp
+         Rueda.cpp
+         RigidBody.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(12): error C2061: error de sintaxis : identificador 'BoxCollision'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(28): error C2143: error de sintaxis : falta ';' delante de '*'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(28): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(28): warning C4183: 'GetConfiguration': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(33): error C2143: error de sintaxis : falta ';' delante de '*'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(33): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(33): warning C4183: 'GetGeoBox': falta el tipo de valor devuelto; se supone que se trata de una función miembro que devuelve 'int'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(57): error C2143: error de sintaxis : falta ';' delante de '*'
+     1>c:\hlocal\motorfisicas\freeglut project 3d\rigidbody.h(57): error C4430: falta el especificador de tipo; se presupone int. Nota: C++ no admite default-int
+         QuadtreeNode.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\quadtreenode.cpp(57): warning C4244: 'argumento' : conversión de 'GLdouble' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\quadtreenode.cpp(59): warning C4244: 'argumento' : conversión de 'GLdouble' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\quadtreenode.cpp(61): warning C4244: 'argumento' : conversión de 'GLdouble' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\quadtreenode.cpp(63): warning C4244: 'argumento' : conversión de 'GLdouble' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\quadtreenode.cpp(151): warning C4244: 'argumento' : conversión de 'GLdouble' a 'float'; posible pérdida de datos
+         QuadTree.cpp
+         PuntoVector3D.cpp
+         ObjetoCuadrico.cpp
+         ObjetoCompuesto.cpp
+         Mundo.cpp
+         Malla.cpp
+         main.cpp
+         Hipotrocoide.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\hipotrocoide.cpp(27): warning C4244: 'inicializando' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+         FalsoTetraedro.cpp
+         Esfera.cpp
+         Escena.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(28): warning C4244: 'argumento' : conversión de 'time_t' a 'unsigned int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(34): warning C4244: 'inicializando' : conversión de 'double' a 'int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(44): warning C4244: 'inicializando' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(45): warning C4244: 'inicializando' : conversión de 'int' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(81): warning C4244: 'argumento' : conversión de 'int' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(127): warning C4244: '=' : conversión de 'GLdouble' a 'int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(128): warning C4244: '=' : conversión de 'GLdouble' a 'int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(131): warning C4244: '=' : conversión de 'GLdouble' a 'int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(132): warning C4244: '=' : conversión de 'GLdouble' a 'int'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\escena.cpp(134): warning C4244: 'argumento' : conversión de 'int' a 'float'; posible pérdida de datos
+         DiscoParcial.cpp
+         Disco.cpp
+         CuboRevolucion.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cuborevolucion.cpp(20): warning C4244: 'argumento' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cuborevolucion.cpp(21): warning C4244: 'argumento' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cuborevolucion.cpp(36): warning C4244: 'inicializando' : conversión de 'double' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cuborevolucion.cpp(37): warning C4244: 'inicializando' : conversión de 'double' a 'float'; posible pérdida de datos
          Cubo.cpp
-       Link:
-         C:\software\programacion\MSVStudio2013\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\hlocal\Práctica 1 IG - Mejoras\freeglut\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.lib" /MACHINE:X86 Debug\ArbolCono1.obj
-         Debug\ArbolCono2.obj
-         Debug\ArbolEsfera1.obj
-         Debug\ArbolEsfera2.obj
-         Debug\Camara.obj
-         Debug\Cara.obj
-         Debug\Cilindro.obj
-         Debug\Coche.obj
-         Debug\Cono.obj
-         Debug\CopaCono.obj
-         Debug\CopaDobleCono.obj
-         Debug\CopaDobleEsfera.obj
-         Debug\CopaEsfera.obj
-         Debug\Cubo.obj
-         Debug\CuboRevolucion.obj
-         Debug\Disco.obj
-         Debug\DiscoParcial.obj
-         Debug\Escena.obj
-         Debug\Esfera.obj
-         Debug\FalsoTetraedro.obj
-         Debug\Hipotrocoide.obj
-         Debug\main.obj
-         Debug\Malla.obj
-         Debug\ObjetoCompuesto.obj
-         Debug\ObjetoCuadrico.obj
-         Debug\PuntoVector3D.obj
-         Debug\QuadTree.obj
-         Debug\QuadtreeNode.obj
-         Debug\Rueda.obj
-         Debug\TAfin.obj
-         Debug\VerticeNormal.obj
-         freeglut project 3D.vcxproj -> C:\hlocal\Práctica 1 IG - Mejoras\Debug\freeglut project 3D.exe
-     1>Done Building Project "C:\hlocal\Práctica 1 IG - Mejoras\freeglut project 3D\freeglut project 3D.vcxproj" (Build target(s)).
+         Generando código...
+         Compilando...
+         CopaEsfera.cpp
+         CopaDobleEsfera.cpp
+         CopaDobleCono.cpp
+         CopaCono.cpp
+         Cono.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cono.cpp(14): warning C4244: '=' : conversión de 'int' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cono.cpp(15): warning C4244: '=' : conversión de 'int' a 'float'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\cono.cpp(21): warning C4244: 'inicializando' : conversión de 'double' a 'float'; posible pérdida de datos
+         Config.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\config.cpp(5): error C2533: 'Config::{ctor}' : los constructores no permiten un tipo de valor devuelto
+     1>c:\hlocal\motorfisicas\freeglut project 3d\config.cpp(5): error C2512: 'PuntoVector3D' : no hay disponible un constructor predeterminado adecuado
+         Coche.cpp
+         Cilindro.cpp
+         Cara.cpp
+         Camara.cpp
+     1>c:\hlocal\motorfisicas\freeglut project 3d\camara.cpp(102): warning C4244: 'inicializando' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\camara.cpp(103): warning C4244: 'inicializando' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\camara.cpp(114): warning C4244: 'inicializando' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+     1>c:\hlocal\motorfisicas\freeglut project 3d\camara.cpp(115): warning C4244: 'inicializando' : conversión de 'double' a 'GLfloat'; posible pérdida de datos
+         ArbolEsfera2.cpp
+         ArbolEsfera1.cpp
+         ArbolCono2.cpp
+         ArbolCono1.cpp
+         Generando código...
+     1>Compilación del proyecto terminada "C:\hlocal\MotorFisicas\freeglut project 3D\freeglut project 3D.vcxproj" (Rebuild destinos) -- ERROR.
 
-Build succeeded.
+ERROR al compilar.
 
-Time Elapsed 00:00:00.73
+Tiempo transcurrido 00:00:09.21

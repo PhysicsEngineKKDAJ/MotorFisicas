@@ -70,6 +70,7 @@
     <ClCompile Include="ArbolCono2.cpp" />
     <ClCompile Include="ArbolEsfera1.cpp" />
     <ClCompile Include="ArbolEsfera2.cpp" />
+    <ClCompile Include="BoxCollision.cpp" />
     <ClCompile Include="Camara.cpp" />
     <ClCompile Include="Cara.cpp" />
     <ClCompile Include="Cilindro.cpp" />
@@ -95,6 +96,7 @@
     <ClCompile Include="PuntoVector3D.cpp" />
     <ClCompile Include="QuadTree.cpp" />
     <ClCompile Include="QuadtreeNode.cpp" />
+    <ClCompile Include="RigidBody.cpp" />
     <ClCompile Include="Rueda.cpp" />
     <ClCompile Include="TAfin.cpp" />
     <ClCompile Include="VerticeNormal.cpp" />
@@ -104,6 +106,7 @@
     <ClInclude Include="ArbolCono2.h" />
     <ClInclude Include="ArbolEsfera1.h" />
     <ClInclude Include="ArbolEsfera2.h" />
+    <ClInclude Include="BoxCollision.h" />
     <ClInclude Include="Camara.h" />
     <ClInclude Include="Cara.h" />
     <ClInclude Include="Cilindro.h" />
@@ -123,6 +126,7 @@
     <ClInclude Include="Hipotrocoide.h" />
     <ClInclude Include="Lista.h" />
     <ClInclude Include="Malla.h" />
+    <ClInclude Include="matriz3x3.h" />
     <ClInclude Include="Mundo.h" />
     <ClInclude Include="Objeto3D.h" />
     <ClInclude Include="ObjetoCompuesto.h" />
@@ -130,6 +134,7 @@
     <ClInclude Include="PuntoVector3D.h" />
     <ClInclude Include="QuadTree.h" />
     <ClInclude Include="QuadtreeNode.h" />
+    <ClInclude Include="RigidBody.h" />
     <ClInclude Include="Rueda.h" />
     <ClInclude Include="TAfin.h" />
     <ClInclude Include="VerticeNormal.h" />
