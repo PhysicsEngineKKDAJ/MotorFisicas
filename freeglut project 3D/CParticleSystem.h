@@ -3,9 +3,46 @@
 
 #include "Lista.h"
 #include "ObjetoCompuesto.h"
-// #include "CParticle.h"
+
 
 class CParticleSystem : public ObjetoCompuesto {
+
+public:
+	class CParticle{
+		
+	public:
+		CParticle(GLfloat m, PuntoVector3D pos, PuntoVector3D vel, GLfloat tRestante, GLfloat tam, GLfloat color[4]);
+		~CParticle();
+
+		// ACCESO Y MODIFICACION DE ATRIBUTOS
+		/**********************************************/
+		PuntoVector3D GetPos() { return pos; }
+		PuntoVector3D GetVel() { return velocidad; }
+		inline void SetVel(PuntoVector3D v) { velocidad = v; }
+		PuntoVector3D GetForce() { return fuerzas; }
+		inline void SetForce(PuntoVector3D f) { fuerzas = f; }
+
+		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+		// Necesito hacer sobrecarga de operadores en PV3D
+		inline void AddForce(PuntoVector3D f) { fuerzas = fuerzas + f; /*fuerzas += f;*/}
+
+		GLfloat GetLife() { return tRestante; }
+		GLfloat GetTam() { return tam; }
+		GLfloat * GetColor() { return color; }
+		GLfloat GetMass() { return m; }
+
+	private:
+
+		GLfloat m;					// Masa
+		PuntoVector3D pos;			// Posicion
+		PuntoVector3D velocidad;	// velocidad
+		PuntoVector3D fuerzas;		// Acumulador de fuerzas
+		GLfloat tRestante;			// Tiempo de vida restante
+		GLfloat tam;				// Tamaño
+		GLfloat color[4];			// Color
+
+	};
+
 public:
 	CParticleSystem(GLfloat mass, GLfloat varMass, GLfloat Kvd, int numParticles, 
 		GLfloat color[4], GLfloat varColor[4], GLfloat m_irl, GLfloat varLife, GLfloat tam, GLfloat varTam);
@@ -13,13 +50,19 @@ public:
 
 	// ACCESO Y MODIFICACION DE ATRIBUTOS
 	/**********************************************/
-	inline int GetNumParticles() const;
-	GLfloat GetKvd();
-	void SetColllisionCheckActive(bool v);
-	inline bool GetCollisionCheckActive() const;
-	CParticle * GetParticle(int i);
-	void RemoveParticle(int i);
-	GLfloat GetLife();
+	inline int GetNumParticles() const { return aParticles->_length(); }
+	GLfloat GetKvd() { return Kvd; }
+	inline void SetColllisionCheckActive(bool v) { colllisionCheckActive = v; }
+	inline bool GetCollisionCheckActive() const { return colllisionCheckActive; }
+	// CParticle * GetParticle(int i) { return aParticles; }
+	inline void RemoveParticle(int i) {
+		CParticle * p;
+		aParticles->_get(i, p);
+		aParticles->_remove(i);
+		delete p;
+	}
+
+	GLfloat GetLife() { return m_irl; }
 	/**********************************************/
 
 	// METODOS VIRTUALES PUROS
@@ -35,7 +78,7 @@ private:
 
 protected:
 	bool colllisionCheckActive;			// Indican si se resuelven las colisiones en el sistema
-	tLista<CParticle*> *aPArticles;		// Array de punteros a particulas
+	tLista<CParticle*> *aParticles;		// Array de punteros a particulas
 	GLfloat Kvd;						// Constante de rozamiento
 	GLfloat particleMass;				// masa aproximada de las particulas
 	GLfloat varMass;					// Masa de las particulas
