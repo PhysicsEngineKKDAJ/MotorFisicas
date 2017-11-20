@@ -113,6 +113,7 @@
     <ClInclude Include="CopaDobleCono.h" />
     <ClInclude Include="CopaDobleEsfera.h" />
     <ClInclude Include="CopaEsfera.h" />
+    <ClInclude Include="CParticleSystem.h" />
     <ClInclude Include="Cubo.h" />
     <ClInclude Include="CuboRevolucion.h" />
     <ClInclude Include="Disco.h" />

@@ -278,5 +278,8 @@
     <ClInclude Include="Lista.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
