@@ -91,6 +91,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Malla.cpp" />
     <ClCompile Include="Mundo.cpp" />
+    <ClCompile Include="Muro.cpp" />
     <ClCompile Include="ObjetoCompuesto.cpp" />
     <ClCompile Include="ObjetoCuadrico.cpp" />
     <ClCompile Include="PuntoVector3D.cpp" />
@@ -98,6 +99,7 @@
     <ClCompile Include="QuadtreeNode.cpp" />
     <ClCompile Include="RigidBody.cpp" />
     <ClCompile Include="Rueda.cpp" />
+    <ClCompile Include="Simulacion.cpp" />
     <ClCompile Include="TAfin.cpp" />
     <ClCompile Include="VerticeNormal.cpp" />
   </ItemGroup>
@@ -128,6 +130,7 @@
     <ClInclude Include="Malla.h" />
     <ClInclude Include="matriz3x3.h" />
     <ClInclude Include="Mundo.h" />
+    <ClInclude Include="Muro.h" />
     <ClInclude Include="Objeto3D.h" />
     <ClInclude Include="ObjetoCompuesto.h" />
     <ClInclude Include="ObjetoCuadrico.h" />
@@ -136,6 +139,7 @@
     <ClInclude Include="QuadtreeNode.h" />
     <ClInclude Include="RigidBody.h" />
     <ClInclude Include="Rueda.h" />
+    <ClInclude Include="Simulacion.h" />
     <ClInclude Include="TAfin.h" />
     <ClInclude Include="VerticeNormal.h" />
   </ItemGroup>

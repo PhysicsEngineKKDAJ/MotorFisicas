@@ -9,6 +9,7 @@ class PuntoVector3D {
 		GLfloat x, y, z;
         int pv;
     public:
+		PuntoVector3D(){};
         PuntoVector3D(GLfloat x, GLfloat y, GLfloat z, int pv);
         ~PuntoVector3D();
         GLfloat getX();

@@ -92,7 +92,9 @@ public:
 	int GetNumberOfBoundingVertices(void);
 	PuntoVector3D GetBodyBoundingVertice(int i);
 	void AddBodyBoundingVertice(PuntoVector3D v);
-	BoxCollision* GetGeoBox();	//-----------SETTER--------------
+	BoxCollision* GetGeoBox();
+
+	//-----------SETTER--------------
 	inline void SetKdl(GLfloat v){ Kdl = v; };
 	inline void SetKda(GLfloat v){ Kda = v; };
 	inline void SetInmovil(bool v);
@@ -116,7 +118,12 @@ private:
 	/*array de configuraciones. Cada configuración se almacenan los datos del sólido que varían en cada simulación,
 	de forma que se tiene varias configuraciones almacenadas que deben ser gestionadas por el resolutor*/
 	//Por ejemplo, el resolutor de Euler solo necesita dos configuraciones, anterior y presente.
-	Config ** aConfigurations;	/*		Define la geometría para ser utilizada por colisiones	*/	BoxCollision * boxCollision;
+	Config ** aConfigurations;
+
+	/*
+		Define la geometría para ser utilizada por colisiones
+	*/
+	BoxCollision * boxCollision;
 
 
 	/*Método que calcula los vértices de la configuración indicada 

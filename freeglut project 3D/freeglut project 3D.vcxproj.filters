@@ -183,6 +183,12 @@
     <ClCompile Include="BoxCollision.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Muro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Simulacion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="PuntoVector3D.h">
@@ -291,6 +297,12 @@
       <Filter>Header Files\Math</Filter>
     </ClInclude>
     <ClInclude Include="BoxCollision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Muro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Simulacion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
