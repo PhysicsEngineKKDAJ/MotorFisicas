@@ -79,6 +79,7 @@
     <ClCompile Include="CopaDobleCono.cpp" />
     <ClCompile Include="CopaDobleEsfera.cpp" />
     <ClCompile Include="CopaEsfera.cpp" />
+    <ClCompile Include="CParticleSystem.cpp" />
     <ClCompile Include="Cubo.cpp" />
     <ClCompile Include="CuboRevolucion.cpp" />
     <ClCompile Include="Disco.cpp" />

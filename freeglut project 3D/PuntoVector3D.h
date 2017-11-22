@@ -22,6 +22,21 @@ class PuntoVector3D {
         PuntoVector3D* clonar();
         GLfloat productoEscalar(PuntoVector3D* vector);
         PuntoVector3D* productoVectorial(PuntoVector3D* vector);
+
+		// SOBRECARGA DE OPERADORES
+		/**********************************************/
+		PuntoVector3D operator +(PuntoVector3D &PV3D) {
+			int PoV;
+			if (this->esPunto()) PoV = 1;
+			else PoV = 0;
+			return{ this->getX() + PV3D.getX(), this->getY() + PV3D.getY(),
+				this->getZ() + PV3D.getZ(), PoV };
+		}
+
+		PuntoVector3D operator += (PuntoVector3D &PV3D) {
+			return operator+(PV3D);
+		}
+
 };
 #endif
 

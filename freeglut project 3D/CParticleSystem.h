@@ -2,10 +2,10 @@
 #define	_H_CParticleSystem_H_
 
 #include "Lista.h"
-#include "ObjetoCompuesto.h"
+#include "Objeto3D.h"
 
 
-class CParticleSystem : public ObjetoCompuesto {
+class CParticleSystem : public Objeto3D	{
 
 public:
 	class CParticle{
@@ -16,30 +16,30 @@ public:
 
 		// ACCESO Y MODIFICACION DE ATRIBUTOS
 		/**********************************************/
-		PuntoVector3D GetPos() { return pos; }
-		PuntoVector3D GetVel() { return velocidad; }
-		inline void SetVel(PuntoVector3D v) { velocidad = v; }
-		PuntoVector3D GetForce() { return fuerzas; }
-		inline void SetForce(PuntoVector3D f) { fuerzas = f; }
+		PuntoVector3D GetPos() { return pos_; }
+		PuntoVector3D GetVel() { return velocidad_; }
+		inline void SetVel(PuntoVector3D v) { velocidad_ = v; }
+		PuntoVector3D GetForce() { return fuerzas_; }
+		inline void SetForce(PuntoVector3D f) { fuerzas_ = f; }
 
 		// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 		// Necesito hacer sobrecarga de operadores en PV3D
-		inline void AddForce(PuntoVector3D f) { fuerzas = fuerzas + f; /*fuerzas += f;*/}
+		inline void AddForce(PuntoVector3D f) { fuerzas_ = fuerzas_ + f; /*fuerzas += f;*/}
 
-		GLfloat GetLife() { return tRestante; }
-		GLfloat GetTam() { return tam; }
-		GLfloat * GetColor() { return color; }
-		GLfloat GetMass() { return m; }
+		GLfloat GetLife() { return tRestante_; }
+		GLfloat GetTam() { return tam_; }
+		GLfloat * GetColor() { return color_; }
+		GLfloat GetMass() { return m_; }
 
 	private:
 
-		GLfloat m;					// Masa
-		PuntoVector3D pos;			// Posicion
-		PuntoVector3D velocidad;	// velocidad
-		PuntoVector3D fuerzas;		// Acumulador de fuerzas
-		GLfloat tRestante;			// Tiempo de vida restante
-		GLfloat tam;				// Tamaño
-		GLfloat color[4];			// Color
+		GLfloat m_;					// Masa
+		PuntoVector3D pos_;			// Posicion
+		PuntoVector3D velocidad_;	// velocidad
+		PuntoVector3D fuerzas_;		// Acumulador de fuerzas
+		GLfloat tRestante_;			// Tiempo de vida restante
+		GLfloat tam_;				// Tamaño
+		GLfloat color_[4];			// Color
 
 	};
 
@@ -51,7 +51,7 @@ public:
 	// ACCESO Y MODIFICACION DE ATRIBUTOS
 	/**********************************************/
 	inline int GetNumParticles() const { return aParticles->_length(); }
-	GLfloat GetKvd() { return Kvd; }
+	GLfloat GetKvd() { return Kvd_; }
 	inline void SetColllisionCheckActive(bool v) { colllisionCheckActive = v; }
 	inline bool GetCollisionCheckActive() const { return colllisionCheckActive; }
 	// CParticle * GetParticle(int i) { return aParticles; }
@@ -62,7 +62,16 @@ public:
 		delete p;
 	}
 
-	GLfloat GetLife() { return m_irl; }
+	GLfloat GetLife() { return m_irl_; }
+
+	/**********************************************/
+	
+	// OPERACIONES CON PARTICULAS
+	/**********************************************/
+	void deleteParticle(CParticle * p1) { delete p1; }
+	void copyParticle(CParticle *&p2, CParticle * p1) {
+		p2 = new CParticle(*p1);
+	}
 	/**********************************************/
 
 	// METODOS VIRTUALES PUROS
@@ -73,21 +82,22 @@ public:
 
 	// En caso de cada paso de la simulacion
 	virtual bool SimulateStepParticle(CParticle * particle, int pos, GLfloat DeltaTime) = 0;
+	/**********************************************/
 
 private:
 
 protected:
 	bool colllisionCheckActive;			// Indican si se resuelven las colisiones en el sistema
 	tLista<CParticle*> *aParticles;		// Array de punteros a particulas
-	GLfloat Kvd;						// Constante de rozamiento
-	GLfloat particleMass;				// masa aproximada de las particulas
-	GLfloat varMass;					// Masa de las particulas
-	int numMAxParticles;				// Nº maximo de particulas
-	GLfloat color[4];					// Color de las particulas
-	GLfloat varColor[4];				// Variacion de color de las particulas
-	GLfloat m_irl;						// Vida de las particulas, -1 = no mueren
-	GLfloat varLife;					// Variacion de la vida
-	GLfloat tam;						// tamaño de las particulas
-	GLfloat varTam;						// Variacion del tamaño de las particulas
+	GLfloat Kvd_;						// Constante de rozamiento
+	GLfloat particleMass_;				// masa aproximada de las particulas
+	GLfloat varMass_;					// Masa de las particulas
+	int numMAxParticles_;				// Nº maximo de particulas
+	GLfloat color_[4];					// Color de las particulas
+	GLfloat varColor_[4];				// Variacion de color de las particulas
+	GLfloat m_irl_;						// Vida de las particulas, -1 = no mueren
+	GLfloat varLife_;					// Variacion de la vida
+	GLfloat tam_;						// tamaño de las particulas
+	GLfloat varTam_;						// Variacion del tamaño de las particulas
 };
 #endif
