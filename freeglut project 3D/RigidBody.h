@@ -3,6 +3,8 @@
 
 #include "matriz3x3.h"
 #include "Lista.h"
+#include "PuntoVector3D.h"
+
 
 /*Tiene todos los datos necesarios para definir un sólido*/
 class RigidBody

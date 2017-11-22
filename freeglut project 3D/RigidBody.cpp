@@ -15,9 +15,9 @@ RigidBody::RigidBody()
 	dormido = false;
 }
 
-CRigidBody::CRigidBody(CGeoBox* box)
+RigidBody::RigidBody(CGeoBox* box)
 {
-	aBodyBoundingVertices = new tLista<vector_3>;
+	aBodyBoundingVertices = new tLista<PuntoVector3D>;
 	aConfigurations = new CConfig*[NumberOfConfigurations];
 	boundingBox = box;
 
@@ -41,11 +41,11 @@ RigidBody::~RigidBody()
 	}
 }
 
-CRigidBody::CConfig::CConfig()
+RigidBody::CConfig::CConfig()
 {
-	aBoundingVertices = new tLista<vector_3>;
+	aBoundingVertices = new tLista<PuntoVector3D>;
 }
-CRigidBody::CConfig::CConfig(const CConfig& c)
+RigidBody::CConfig::CConfig(const CConfig& c)
 {
 	CMVelocity = c.CMVelocity;
 	AngularMomentum = c.AngularMomentum;
@@ -60,19 +60,19 @@ CRigidBody::CConfig::CConfig(const CConfig& c)
 	CMForce = c.CMForce;
 	Torque = c.Torque;
 
-	aBoundingVertices = new tLista<vector_3>(*c.aBoundingVertices);
+	aBoundingVertices = new tLista<PuntoVector3D>(*c.aBoundingVertices);
 }
-CRigidBody::CConfig::~CConfig()
+RigidBody::CConfig::~CConfig()
 {
 	delete aBoundingVertices;
 	aBoundingVertices = NULL;
 }
 
-void CRigidBody::Integrate(real DeltaTime, unsigned int ConfIndex, unsigned int TargetIndex)
+void RigidBody::Integrate(float DeltaTime, unsigned int ConfIndex, unsigned int TargetIndex)
 {
 
-	CRigidBody::CConfig* Source = GetConfiguration(ConfIndex);
-	CRigidBody::CConfig* Target = GetConfiguration(TargetIndex);
+	RigidBody::CConfig* Source = GetConfiguration(ConfIndex);
+	RigidBody::CConfig* Target = GetConfiguration(TargetIndex);
 
 
 
@@ -81,7 +81,7 @@ void CRigidBody::Integrate(real DeltaTime, unsigned int ConfIndex, unsigned int 
 
 	Target->SetOrientation(Source->GetOrientation() +
 		DeltaTime *
-		matrix_3x3(Source->GetAngularVelocity(), matrix_3x3::SkewSymmetric) *
+		matriz3x3(Source->GetAngularVelocity(), matrix3x3::SkewSymmetric) *
 		Source->GetOrientation());
 
 	Target->SetCMVelocity(Source->GetCMVelocity() +
@@ -90,7 +90,7 @@ void CRigidBody::Integrate(real DeltaTime, unsigned int ConfIndex, unsigned int 
 	Target->SetAngularMomentum(Source->GetAngularMomentum() +
 		DeltaTime * Source->GetTorque());
 
-	matrix_3x3 m = Target->GetOrientation();
+	matriz3x3 m = Target->GetOrientation();
 	OrthonormalizeOrientation(m);
 	Target->SetOrientation(m);
 
@@ -104,12 +104,12 @@ void CRigidBody::Integrate(real DeltaTime, unsigned int ConfIndex, unsigned int 
 		Target->GetAngularMomentum());
 }
 
-void CRigidBody::CalculateVertices(int ConfigurationIndex)
+void RigidBody::CalculateVertices(int ConfigurationIndex)
 {
-	vector_3 vAux;
-	CRigidBody::CConfig *Configuration = this->GetConfiguration(ConfigurationIndex);
-	matrix_3x3 const &A = Configuration->GetOrientation();
-	vector_3 const &R = Configuration->GetCMPosition();
+	PuntoVector3D vAux;
+	RigidBody::CConfig *Configuration = this->GetConfiguration(ConfigurationIndex);
+	matriz3x3 const &A = Configuration->GetOrientation();
+	PuntoVector3D const &R = Configuration->GetCMPosition();
 
 
 	for (int unsigned i = 0; i < this->GetNumberOfBoundingVertices(); i++)
@@ -119,21 +119,21 @@ void CRigidBody::CalculateVertices(int ConfigurationIndex)
 	}
 }
 
-vector_3 CRigidBody::GetBodyBoundingVertice(const int& i)
+PuntoVector3D RigidBody::GetBodyBoundingVertice(const int& i)
 {
-	vector_3 s;
+	PuntoVector3D s;
 	aBodyBoundingVertices->_get(i, s);
 	return s;
 }
 
-vector_3* CRigidBody::CConfig::GetBoundingVertice(const int& i)
+PuntoVector3D* RigidBody::CConfig::GetBoundingVertice(const int& i)
 {
-	vector_3* v;
+	PuntoVector3D* v;
 	aBoundingVertices->_getPointer(i, v);
 	return v;
 }
 
-void CRigidBody::AddBodyBoundingVertice(vector_3 v)
+void RigidBody::AddBodyBoundingVertice(vector_3 v)
 {
 	aBodyBoundingVertices->_add(v);
 	for (int i = 0; i<NumberOfConfigurations; i++)
